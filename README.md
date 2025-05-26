@@ -15,4 +15,4 @@ started an implenentation of a subway surfer clone
 till nwo it's just red blocks falling down and you need to escape these blocks
 
 ### wordrun
-a simple game to start leanrign a language. for now there are just a few german-english words, but it's easy to insert additional words into the code
+a simple game to start leanrign a language. for now there are just a few english-german and english-spanish words, but it's easy to insert additional words into the code
