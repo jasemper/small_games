@@ -11,8 +11,17 @@ WIDTH, HEIGHT = 500, 700
 CHAR_WIDTH, CHAR_HEIGHT = 100, 100
 CHAR_SPEED = 0.5
 TEXT_COLOR = (0, 0, 0)
-WORDS = {"man":"Mann", "men":"Männer", "woman":"Frau", "women":"Frauen", "child":"Kind", "children":"Kinder", "kitchen":"Küche", "bathroom":"Bad", "cat":"Katze", "dog":"Hund"}
+WORDS = {}
 TUTORIAL = "There will always be three\nbricks falling towards the\nground.\nUse the left and right arrow\nkeys to move me beneath\nthe brick, that has the\ncorrect translation for the\nword on th top, in order to\nsurvive.."
+
+# Read in the words file
+with open("data/words_eng-ger.txt", 'r') as file:
+    lines = file.readlines()
+for line in lines:
+    line = line.strip()  # Remove any leading/trailing whitespace
+    if line:
+        key, value = line.split(" : ")
+        WORDS[key.replace(' ', '')] = value.replace(' ', '')
 
 # Create the screen
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
