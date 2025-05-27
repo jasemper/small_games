@@ -1,6 +1,9 @@
 # small_games
 
 ## Games
+anyone is allowed to use these games however they want to use them. Expand them, finish them, change them, build upon them, or just simply play them.
+Just don't publish them as your own work.
+
 ### flappy
 easy, nice looking Flappy bird implementation with pygame
 
